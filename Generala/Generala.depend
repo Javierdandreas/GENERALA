@@ -1,4 +1,61 @@
 # depslib dependency file v1.0
-1685928543 source:c:\users\mi\onedrive\documentos\github\generala\generala\main.cpp
+1686084323 source:c:\users\mi\onedrive\documentos\github\generala\generala\main.cpp
 	<iostream>
+	"rlutil.h"
+	"Dados.h"
+	"funciones.h"
+
+1604326500 source:c:\users\mi\onedrive\documentos\github\generala\generala\dadosrlutil.cpp
+	<iostream>
+	<cstdlib>
+	<cstdio>
+	<ctime>
+	<windows.h>
+	<conio.h>
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	"TestDados.h"
+	"rlutil.h"
+
+1604327014 c:\users\mi\onedrive\documentos\github\generala\generala\testdados.h
+	<iostream>
+	<cstdlib>
+	<cstdio>
+	<ctime>
+	<windows.h>
+	<conio.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"rlutil.h"
+	<dos.h>
+
+1603715401 c:\users\mi\onedrive\documentos\github\generala\generala\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+
+1686082783 source:c:\users\mi\onedrive\documentos\github\generala\generala\dados.cpp
+	<iostream>
+	"rlutil.h"
+	<cstdlib>
+	"Dados.h"
+
+1686082367 c:\users\mi\onedrive\documentos\github\generala\generala\dados.h
+
+1686084547 c:\users\mi\onedrive\documentos\github\generala\generala\funciones.h
+	<iostream>
+	<cstdlib>
+	<cstdio>
+	<ctime>
 

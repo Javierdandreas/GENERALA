@@ -1,11 +1,11 @@
 #ifndef FUNCIONES_H_INCLUDED
 #define FUNCIONES_H_INCLUDED
 
-/**#include<iostream>
+#include<iostream>
 #include<cstdlib>
 #include<cstdio>
 #include<ctime>
-using namespace std;*/
+using namespace std;
 
 /// DECLARACIÓN/PROTOTIPO DE FUNCIONES
 void cargarVector(int v[], int tam);///asigna valores a cada una de las posiciones del vector
@@ -136,3 +136,4 @@ void cargarVector(int v[], int tam){
         cin>>v[i];
     }
 }
+#endif
