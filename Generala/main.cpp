@@ -13,6 +13,7 @@ int main(){
     DibujarDados(4, 30, 5);
     DibujarDados(5, 40, 5);
     DibujarDados(6, 50, 5);
+    DibujarDados(6, 60, 5);
 
 
     rlutil::locate(1, 24);

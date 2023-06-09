@@ -59,3 +59,31 @@
 	<cstdio>
 	<ctime>
 
+1686337599 source:c:\users\user\documents\github\generala\generala\main.cpp
+	<iostream>
+	"rlutil.h"
+	"Dados.h"
+	"funciones.h"
+
+1686337131 c:\users\user\documents\github\generala\generala\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+
+1686337131 c:\users\user\documents\github\generala\generala\dados.h
+
+1686337131 c:\users\user\documents\github\generala\generala\funciones.h
+	<iostream>
+	<cstdlib>
+	<cstdio>
+	<ctime>
+
