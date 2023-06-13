@@ -32,13 +32,15 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="DadosRlutil.cpp" />
-		<Unit filename="DadosRlutil.exe" />
-		<Unit filename="DadosRlutil.o" />
+		<Unit filename="Dados.cpp" />
+		<Unit filename="Dados.h" />
 		<Unit filename="Generala.cbp" />
 		<Unit filename="Generala.depend" />
 		<Unit filename="Generala.layout" />
-		<Unit filename="TestDados.h" />
+		<Unit filename="Menu.cpp" />
+		<Unit filename="Menu.h" />
+		<Unit filename="Reglas.cpp" />
+		<Unit filename="Reglas.h" />
 		<Unit filename="funciones.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="rlutil.h" />

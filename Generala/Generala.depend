@@ -1,8 +1,9 @@
 # depslib dependency file v1.0
-1686084323 source:c:\users\mi\onedrive\documentos\github\generala\generala\main.cpp
+1686619528 source:c:\users\mi\onedrive\documentos\github\generala\generala\main.cpp
 	<iostream>
 	"rlutil.h"
 	"Dados.h"
+	"Menu.h"
 	"funciones.h"
 
 1604326500 source:c:\users\mi\onedrive\documentos\github\generala\generala\dadosrlutil.cpp
@@ -45,7 +46,7 @@
 	<sys/types.h>
 	<sys/time.h>
 
-1686082783 source:c:\users\mi\onedrive\documentos\github\generala\generala\dados.cpp
+1686338165 source:c:\users\mi\onedrive\documentos\github\generala\generala\dados.cpp
 	<iostream>
 	"rlutil.h"
 	<cstdlib>
@@ -53,7 +54,8 @@
 
 1686082367 c:\users\mi\onedrive\documentos\github\generala\generala\dados.h
 
-1686084547 c:\users\mi\onedrive\documentos\github\generala\generala\funciones.h
+1686593881 c:\users\mi\onedrive\documentos\github\generala\generala\funciones.h
+	"rlutil.h"
 	<iostream>
 	<cstdlib>
 	<cstdio>
@@ -86,4 +88,13 @@
 	<cstdlib>
 	<cstdio>
 	<ctime>
+
+1686619702 c:\users\mi\onedrive\documentos\github\generala\generala\menu.h
+
+1686624577 source:c:\users\mi\onedrive\documentos\github\generala\generala\menu.cpp
+	<iostream>
+	<cstdlib>
+	"rlutil.h"
+	"windows.h"
+	"Menu.h"
 

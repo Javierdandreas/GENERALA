@@ -1,6 +1,6 @@
 #ifndef FUNCIONES_H_INCLUDED
 #define FUNCIONES_H_INCLUDED
-
+#include "rlutil.h"
 #include<iostream>
 #include<cstdlib>
 #include<cstdio>
@@ -8,6 +8,7 @@
 using namespace std;
 
 /// DECLARACIÓN/PROTOTIPO DE FUNCIONES
+
 void cargarVector(int v[], int tam);///asigna valores a cada una de las posiciones del vector
 
 void mostrarVector(int v[], int tam);/// muestra lo que contiene cada una de las posiciones del vector
