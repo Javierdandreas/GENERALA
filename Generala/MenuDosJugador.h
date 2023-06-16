@@ -1,0 +1,7 @@
+#ifndef MENU_DOS_JUGADOR_H_INCLUDED
+#define MENU_DOS_JUGADOR_H_INCLUDED
+
+void MenuDosJugadores ();
+
+
+#endif // MENU_DOS_JUGADOR_H_INCLUDED

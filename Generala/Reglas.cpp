@@ -3,5 +3,112 @@
 #include"rlutil.h"
 
 using namespace std;
+#include "Reglas.h"
+#include "Menu.h"
+#include "Dados.h"
 
+
+void MenuReglas (){
+        TituloAnimado("REGLAS DE LA ESCALERA", 50);
+        rlutil::locate(25, 10);
+        cout << "Las partidas estan compuestas por cierta cantidad de rondas." << endl;
+
+        rlutil::locate(25, 11);
+        cout << "Una ronda esta compuesta por 3 lanzamientos"<< endl;
+
+        rlutil::locate(25, 12);
+        cout << "y un lanzamiento consiste en tirar 6 dados y evaluar sus valores para determinar el puntaje"<< endl;
+
+        rlutil::locate(25, 16);
+        cout << "Como se determina el puntaje?" << endl;
+
+        rlutil::locate(27, 17);
+        cout << "Sera el valor maximo obtenido entre los 3 lanzamientos con 2 excepciones: " << endl;
+
+        rlutil::locate(27, 18);
+        cout << "1) Si se obtiene Escalera GANA EL PARTIDO en ese momento" << endl;
+        Escalera();
+
+        azul();
+        rlutil::locate(25, 25);
+        cout << "El orden puede ser desordenado. No necesariamente tiene que estarlo como se ve en el ejemplo" << endl;
+
+        rlutil::locate(25, 26);
+        cout << "2) Si se obtiene 6 dados con valor 6 el puntaje de la ronda sera 0" << endl;
+        negro();
+        Sexteto6();
+
+        azul();
+        rlutil::locate(25, 32);
+        cout << "Luego hay 3 tipos de conbinaciones mas:";
+        rlutil::locate(27, 33);
+        cout << "SUMA DE DADOS:";
+        rlutil::locate(27, 34);
+        cout << "Su condicion debe ser que tienen que haber menos de 3 dados iguales, su maximo son dos";
+        negro();
+        SumaDados();
+
+        azul();
+        rlutil::locate(27, 40);
+        cout << "TRIO X:" ;
+        rlutil::locate(27, 41);
+        cout << "Su condicion debe ser que tienen que haber mas de 3 dados iguales, su maximo son cinco";
+        negro();
+        TrioX();
+
+
+
+}
+void negro (){
+    rlutil::setBackgroundColor(rlutil::BLACK);
+}
+
+void azul (){
+    rlutil::setBackgroundColor(rlutil::BLUE);
+}
+
+void lugar (int posx, int posy){
+    rlutil::locate(posx, posy);
+}
+void SumaDados (){
+        DibujarDados(6, 25, 36);
+        DibujarDados(5, 35, 36);
+        DibujarDados(5, 45, 36);
+        DibujarDados(2, 55, 36);
+        DibujarDados(2, 65, 36);
+        DibujarDados(1, 75, 36);
+}
+
+void TrioX (){
+        DibujarDados(1, 25, 43);
+        DibujarDados(1, 35, 43);
+        DibujarDados(1, 45, 43);
+        DibujarDados(2, 55, 43);
+        DibujarDados(3, 65, 43);
+        DibujarDados(2, 75, 43);
+}
+void SextetoX (){
+        DibujarDados(5, 25, 20);
+        DibujarDados(5, 35, 20);
+        DibujarDados(5, 45, 20);
+        DibujarDados(5, 55, 20);
+        DibujarDados(5, 65, 20);
+        DibujarDados(5, 75, 20);
+}
+void Escalera (){
+        DibujarDados(1, 25, 20);
+        DibujarDados(2, 35, 20);
+        DibujarDados(3, 45, 20);
+        DibujarDados(4, 55, 20);
+        DibujarDados(5, 65, 20);
+        DibujarDados(6, 75, 20);
+}
+void Sexteto6 (){
+        DibujarDados(6, 25, 28);
+        DibujarDados(6, 35, 28);
+        DibujarDados(6, 45, 28);
+        DibujarDados(6, 55, 28);
+        DibujarDados(6, 65, 28);
+        DibujarDados(6, 75, 28);
+}
 #include "Reglas.h"

@@ -1,12 +1,13 @@
 #include<iostream>
 #include<cstdlib>
 #include"rlutil.h"
-
+#include<cstdlib>
 using namespace std;
-
+#include "Reglas.h"
 #include "Menu.h"
+#include "Dados.h"
 
-void TituloAnimado(){
+int TituloAnimado(const char *titulo, int posx){
         rlutil::setBackgroundColor(rlutil::BLUE);
         int xcol;
         // primera linea
@@ -26,6 +27,7 @@ void TituloAnimado(){
         rlutil::locate(xcol, 4);
         cout<< (char) 205;
 
+
         }
 
         rlutil::locate(116, 2);
@@ -36,26 +38,12 @@ void TituloAnimado(){
         cout<< (char) 188;
 
         //SEGUNDA LINEA
-
-        char vtitulo[] = "BIENVENIDO A ESCALERA";
-        int vlongitud;
-        vlongitud = strlen(vtitulo);
-        int vcentro = (((80 - vlongitud) / 2) + 1);
-
-        for (xcol = 49; xcol <= vcentro; xcol++) {
-        }
-            rlutil::locate(xcol, 3); cout<<(vtitulo);
-        }
-
-enum Opciones {
-	Opcion1=0,
-	Opcion2=1,
-	Opcion3=2,
-	Salir=3
-};
+        rlutil::locate(posx, 3);
+        cout<<titulo;
+}
 
 void Seleccion(const char* text, int posx, int posy, bool selected) {
-
+    //Recibe una cadena de caracteres, su posicion y un booleano para saber si esta seleccionado o no (usamos la variable "y" que sube o baja para saber si vale 0, 1, 2, 3)
 	if (selected) {
 		rlutil::setBackgroundColor(rlutil::BLUE);
 		rlutil::locate(posx - 3, posy);
@@ -71,25 +59,38 @@ void Seleccion(const char* text, int posx, int posy, bool selected) {
 	rlutil::setBackgroundColor(rlutil::BLACK);
 }
 
-void MostarMenuPrincipal(){
-    int op = 1;
+enum OPCIONES {
+    OP1=0,
+    OP2=1,
+    OP3=2,
+    SALIR=3
+
+};
+
+void MenuPrincipal(){
+    bool repite = true;
+
 	int y = 0; //Variable para que se muestre cual estoy seleccionando, si arriba o abajo
 	rlutil::hidecursor();
 
 	do {
+       rlutil::cls;
 
-        TituloAnimado();
+        TituloAnimado("BIENVENIDO A ESCALERA", 50);
 
-	    rlutil::cls;
 
 		rlutil::setBackgroundColor(rlutil::BLACK);
 		rlutil::setColor(rlutil::WHITE);
 		rlutil::hidecursor();
 
-		Seleccion("   UN JUGADOR   ", 52, 10, y == Opcion1);
-		Seleccion("  DOS JUGADORES ", 52, 11, y == Opcion2);
-		Seleccion("     REGLAS     ", 52, 12, y == Opcion3);
-		Seleccion("     SALIR      ", 52, 13, y == Salir);
+        //Llamo a la funcion Seleccion y le envio los parametros
+
+		Seleccion("   UN JUGADOR   ", 52, 10, y == OP1);
+		Seleccion("  DOS JUGADORES ", 52, 11, y == OP2);
+		Seleccion("     REGLAS     ", 52, 12, y == OP3);
+		Seleccion("     SALIR      ", 52, 13, y == SALIR);
+
+        rlutil::cls;
 
 		switch (rlutil::getkey()){
 		case 14: // ARRIBA
@@ -112,15 +113,46 @@ void MostarMenuPrincipal(){
 
 		case 1: // ENTER
 			switch (y){
-			    case 3:
-                    op = 0;
-                default:
+            case 0:
+                system("cls");
+
+                TituloAnimado("MODO DE UN JUGADOR", 51);
+
+
+
+                rlutil::anykey();
+                break;
+
+            case 1:
+                system("cls");
+
+                TituloAnimado("MODO DOS JUGADORES", 51);
+
+
+
+
+                rlutil::anykey();
+                break;
+
+            case 2:
+                system("cls");
+                MenuReglas();
+                rlutil::anykey();
+                rlutil::setBackgroundColor(rlutil::BLACK);
+                system("cls");
+
+                break;
+
+            case 3:
+                repite = false;
+
+            default:
                 break;
             }
-
-			break;
+        break;
 		default:
-			break;
+        break;
 		}
-	} while (op != 0);
+
+	} while (repite);
 }

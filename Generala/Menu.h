@@ -2,8 +2,8 @@
 #define MENU_H_INCLUDED
 
 
-void showItem(const char* text, int posx, int posy, bool selected);
-void MostarMenuPrincipal();
-void TituloAnimado();
+void Seleccion(const char* text, int posx, int posy, bool selected);
+void MenuPrincipal();
+int TituloAnimado(const char *titulo, int posx);
 
 #endif // MENU_H_INCLUDED

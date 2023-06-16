@@ -16,12 +16,12 @@ void mostrarVector(int v[], int tam);/// muestra lo que contiene cada una de las
 void ponerCero(int v[], int tam);/// pone en 0 todas las posiciones del vector
 
 int posicionNumeroEnVector(int v[],int tam, int numero);/// devuelve la posición que ocupa un número que se //envía como parámetro. Devuelve la primera posición que encuentra el número. Si no lo encuentra devuelve -1
+
 int contarNumerosRepetidos(int v[], int tam , int numero);///cuenta la cantidad de veces que se repite un //número en el vector
 
 int maximoVector(int v[], int tam);///devuelve  la posición (primera) que ocupa el máximo en el vector
 
 int minimoVector(int v[], int tam);///devuelve  la posición (primera) que ocupa el mínimo en el vector
-
 
 void cargarAleatorio(int v[], int tam, int limite);///asigna valores aleatorios a cada al vector
 

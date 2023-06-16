@@ -1,9 +1,10 @@
 # depslib dependency file v1.0
-1686619528 source:c:\users\mi\onedrive\documentos\github\generala\generala\main.cpp
+1686832993 source:c:\users\mi\onedrive\documentos\github\generala\generala\main.cpp
 	<iostream>
 	"rlutil.h"
 	"Dados.h"
 	"Menu.h"
+	"Reglas.h"
 	"funciones.h"
 
 1604326500 source:c:\users\mi\onedrive\documentos\github\generala\generala\dadosrlutil.cpp
@@ -54,7 +55,7 @@
 
 1686082367 c:\users\mi\onedrive\documentos\github\generala\generala\dados.h
 
-1686593881 c:\users\mi\onedrive\documentos\github\generala\generala\funciones.h
+1686883695 c:\users\mi\onedrive\documentos\github\generala\generala\funciones.h
 	"rlutil.h"
 	<iostream>
 	<cstdlib>
@@ -89,12 +90,37 @@
 	<cstdio>
 	<ctime>
 
-1686619702 c:\users\mi\onedrive\documentos\github\generala\generala\menu.h
+1686920970 c:\users\mi\onedrive\documentos\github\generala\generala\menu.h
 
-1686624577 source:c:\users\mi\onedrive\documentos\github\generala\generala\menu.cpp
+1686924290 source:c:\users\mi\onedrive\documentos\github\generala\generala\menu.cpp
 	<iostream>
 	<cstdlib>
 	"rlutil.h"
-	"windows.h"
+	<cstdlib>
+	"Reglas.h"
 	"Menu.h"
+	"Dados.h"
+
+1686928931 source:c:\users\mi\onedrive\documentos\github\generala\generala\reglas.cpp
+	<iostream>
+	<cstdlib>
+	"rlutil.h"
+	"Reglas.h"
+	"Menu.h"
+	"Dados.h"
+	"Reglas.h"
+
+1686925403 c:\users\mi\onedrive\documentos\github\generala\generala\reglas.h
+
+1686791133 source:c:\users\mi\onedrive\documentos\github\generala\generala\menudosjugadores.cpp
+	<iostream>
+	<cstdlib>
+
+1686791133 source:c:\users\mi\onedrive\documentos\github\generala\generala\menuunjugador.cpp
+	<iostream>
+	<cstdlib>
+
+1686792020 c:\users\mi\onedrive\documentos\github\generala\generala\menuunjugador.h
+
+1686792020 c:\users\mi\onedrive\documentos\github\generala\generala\menudosjugador.h
 
