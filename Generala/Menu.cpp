@@ -27,7 +27,6 @@ int TituloAnimado(const char *titulo, int posx){
         rlutil::locate(xcol, 4);
         cout<< (char) 205;
 
-
         }
 
         rlutil::locate(116, 2);

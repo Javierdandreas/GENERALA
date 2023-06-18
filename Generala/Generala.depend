@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1686832993 source:c:\users\mi\onedrive\documentos\github\generala\generala\main.cpp
+1686929525 source:c:\users\mi\onedrive\documentos\github\generala\generala\main.cpp
 	<iostream>
 	"rlutil.h"
 	"Dados.h"
@@ -92,7 +92,7 @@
 
 1686920970 c:\users\mi\onedrive\documentos\github\generala\generala\menu.h
 
-1686924290 source:c:\users\mi\onedrive\documentos\github\generala\generala\menu.cpp
+1687043540 source:c:\users\mi\onedrive\documentos\github\generala\generala\menu.cpp
 	<iostream>
 	<cstdlib>
 	"rlutil.h"
@@ -101,7 +101,7 @@
 	"Menu.h"
 	"Dados.h"
 
-1686928931 source:c:\users\mi\onedrive\documentos\github\generala\generala\reglas.cpp
+1687048156 source:c:\users\mi\onedrive\documentos\github\generala\generala\reglas.cpp
 	<iostream>
 	<cstdlib>
 	"rlutil.h"
@@ -110,7 +110,7 @@
 	"Dados.h"
 	"Reglas.h"
 
-1686925403 c:\users\mi\onedrive\documentos\github\generala\generala\reglas.h
+1687048592 c:\users\mi\onedrive\documentos\github\generala\generala\reglas.h
 
 1686791133 source:c:\users\mi\onedrive\documentos\github\generala\generala\menudosjugadores.cpp
 	<iostream>

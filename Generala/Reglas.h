@@ -11,5 +11,4 @@ void Sexteto6();
 
 void azul ();
 void negro ();
-void lugar (int posx, int posy);
 #endif // REGLAS_H_INCLUDED
