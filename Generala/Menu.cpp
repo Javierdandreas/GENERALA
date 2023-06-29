@@ -6,6 +6,7 @@ using namespace std;
 #include "Reglas.h"
 #include "Menu.h"
 #include "Dados.h"
+#include "MenuDosJugador.h"
 
 int TituloAnimado(const char *titulo, int posx){
         rlutil::setBackgroundColor(rlutil::BLUE);
@@ -125,19 +126,22 @@ void MenuPrincipal(){
             case 1:
                 system("cls");
 
-                TituloAnimado("MODO DOS JUGADORES", 51);
-
-
-
+                MenuDosJugadores();
 
                 rlutil::anykey();
+                rlutil::setBackgroundColor(rlutil::BLACK);
+
+                system("cls");
                 break;
 
             case 2:
                 system("cls");
+
                 MenuReglas();
+
                 rlutil::anykey();
                 rlutil::setBackgroundColor(rlutil::BLACK);
+
                 system("cls");
 
                 break;

@@ -34,11 +34,14 @@
 		</Compiler>
 		<Unit filename="Dados.cpp" />
 		<Unit filename="Dados.h" />
+		<Unit filename="Funciones.cpp" />
 		<Unit filename="Generala.cbp" />
 		<Unit filename="Generala.depend" />
 		<Unit filename="Generala.layout" />
 		<Unit filename="Menu.cpp" />
 		<Unit filename="Menu.h" />
+		<Unit filename="MenuDosJugador.h" />
+		<Unit filename="MenuDosJugadores.cpp" />
 		<Unit filename="Reglas.cpp" />
 		<Unit filename="Reglas.h" />
 		<Unit filename="funciones.h" />

@@ -55,7 +55,7 @@
 
 1686082367 c:\users\mi\onedrive\documentos\github\generala\generala\dados.h
 
-1686883695 c:\users\mi\onedrive\documentos\github\generala\generala\funciones.h
+1688008429 c:\users\mi\onedrive\documentos\github\generala\generala\funciones.h
 	"rlutil.h"
 	<iostream>
 	<cstdlib>
@@ -90,9 +90,9 @@
 	<cstdio>
 	<ctime>
 
-1686920970 c:\users\mi\onedrive\documentos\github\generala\generala\menu.h
+1687998849 c:\users\mi\onedrive\documentos\github\generala\generala\menu.h
 
-1687043540 source:c:\users\mi\onedrive\documentos\github\generala\generala\menu.cpp
+1687990078 source:c:\users\mi\onedrive\documentos\github\generala\generala\menu.cpp
 	<iostream>
 	<cstdlib>
 	"rlutil.h"
@@ -100,8 +100,9 @@
 	"Reglas.h"
 	"Menu.h"
 	"Dados.h"
+	"MenuDosJugador.h"
 
-1687048156 source:c:\users\mi\onedrive\documentos\github\generala\generala\reglas.cpp
+1688016035 source:c:\users\mi\onedrive\documentos\github\generala\generala\reglas.cpp
 	<iostream>
 	<cstdlib>
 	"rlutil.h"
@@ -112,9 +113,15 @@
 
 1687048592 c:\users\mi\onedrive\documentos\github\generala\generala\reglas.h
 
-1686791133 source:c:\users\mi\onedrive\documentos\github\generala\generala\menudosjugadores.cpp
+1688025656 source:c:\users\mi\onedrive\documentos\github\generala\generala\menudosjugadores.cpp
 	<iostream>
 	<cstdlib>
+	"rlutil.h"
+	"Menu.h"
+	"MenuDosJugador.h"
+	"Dados.h"
+	"funciones.h"
+	"Reglas.h"
 
 1686791133 source:c:\users\mi\onedrive\documentos\github\generala\generala\menuunjugador.cpp
 	<iostream>
@@ -122,5 +129,12 @@
 
 1686792020 c:\users\mi\onedrive\documentos\github\generala\generala\menuunjugador.h
 
-1686792020 c:\users\mi\onedrive\documentos\github\generala\generala\menudosjugador.h
+1688026216 c:\users\mi\onedrive\documentos\github\generala\generala\menudosjugador.h
+
+1688022937 source:c:\users\mi\onedrive\documentos\github\generala\generala\funciones.cpp
+	<iostream>
+	<cstdlib>
+	<cstdio>
+	<ctime>
+	"funciones.h"
 
