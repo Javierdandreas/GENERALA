@@ -4,7 +4,7 @@
 
 void Seleccion(const char* text, int posx, int posy, bool selected);
 void MenuPrincipal();
-int TituloAnimado(const char *titulo, int posx);
+int TituloAnimado(const char *titulo, int);
 
 
 #endif // MENU_H_INCLUDED

@@ -11,6 +11,7 @@ using namespace std;
 void MenuReglas (){
 
         TituloAnimado("REGLAS DE LA ESCALERA", 50);
+
         rlutil::locate(25, 10);
         cout << "Las partidas estan compuestas por cierta cantidad de rondas." << endl;
 

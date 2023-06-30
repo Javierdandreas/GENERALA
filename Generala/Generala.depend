@@ -47,7 +47,7 @@
 	<sys/types.h>
 	<sys/time.h>
 
-1686338165 source:c:\users\mi\onedrive\documentos\github\generala\generala\dados.cpp
+1688095555 source:c:\users\mi\onedrive\documentos\github\generala\generala\dados.cpp
 	<iostream>
 	"rlutil.h"
 	<cstdlib>
@@ -90,9 +90,9 @@
 	<cstdio>
 	<ctime>
 
-1687998849 c:\users\mi\onedrive\documentos\github\generala\generala\menu.h
+1688091409 c:\users\mi\onedrive\documentos\github\generala\generala\menu.h
 
-1687990078 source:c:\users\mi\onedrive\documentos\github\generala\generala\menu.cpp
+1688094208 source:c:\users\mi\onedrive\documentos\github\generala\generala\menu.cpp
 	<iostream>
 	<cstdlib>
 	"rlutil.h"
@@ -101,8 +101,9 @@
 	"Menu.h"
 	"Dados.h"
 	"MenuDosJugador.h"
+	"MenuUnJugador.h"
 
-1688016035 source:c:\users\mi\onedrive\documentos\github\generala\generala\reglas.cpp
+1688094336 source:c:\users\mi\onedrive\documentos\github\generala\generala\reglas.cpp
 	<iostream>
 	<cstdlib>
 	"rlutil.h"
@@ -113,7 +114,7 @@
 
 1687048592 c:\users\mi\onedrive\documentos\github\generala\generala\reglas.h
 
-1688025656 source:c:\users\mi\onedrive\documentos\github\generala\generala\menudosjugadores.cpp
+1688098084 source:c:\users\mi\onedrive\documentos\github\generala\generala\menudosjugadores.cpp
 	<iostream>
 	<cstdlib>
 	"rlutil.h"
@@ -123,15 +124,22 @@
 	"funciones.h"
 	"Reglas.h"
 
-1686791133 source:c:\users\mi\onedrive\documentos\github\generala\generala\menuunjugador.cpp
+1688098096 source:c:\users\mi\onedrive\documentos\github\generala\generala\menuunjugador.cpp
 	<iostream>
 	<cstdlib>
+	"rlutil.h"
+	"Menu.h"
+	"MenuUnJugador.h"
+	"Dados.h"
+	"funciones.h"
+	"Reglas.h"
+	"MenuDosJugador.h"
 
-1686792020 c:\users\mi\onedrive\documentos\github\generala\generala\menuunjugador.h
+1688092349 c:\users\mi\onedrive\documentos\github\generala\generala\menuunjugador.h
 
-1688026216 c:\users\mi\onedrive\documentos\github\generala\generala\menudosjugador.h
+1688097730 c:\users\mi\onedrive\documentos\github\generala\generala\menudosjugador.h
 
-1688022937 source:c:\users\mi\onedrive\documentos\github\generala\generala\funciones.cpp
+1688095945 source:c:\users\mi\onedrive\documentos\github\generala\generala\funciones.cpp
 	<iostream>
 	<cstdlib>
 	<cstdio>

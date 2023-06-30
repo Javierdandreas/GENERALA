@@ -2,13 +2,17 @@
 #include<cstdlib>
 #include"rlutil.h"
 #include<cstdlib>
+
 using namespace std;
+
 #include "Reglas.h"
 #include "Menu.h"
 #include "Dados.h"
 #include "MenuDosJugador.h"
+#include "MenuUnJugador.h"
 
-int TituloAnimado(const char *titulo, int posx){
+int TituloAnimado(const char* titulo, int posx){
+
         rlutil::setBackgroundColor(rlutil::BLUE);
         int xcol;
         // primera linea
@@ -68,6 +72,7 @@ enum OPCIONES {
 };
 
 void MenuPrincipal(){
+
     bool repite = true;
 
 	int y = 0; //Variable para que se muestre cual estoy seleccionando, si arriba o abajo
@@ -76,7 +81,7 @@ void MenuPrincipal(){
 	do {
        rlutil::cls;
 
-        TituloAnimado("BIENVENIDO A ESCALERA", 50);
+        TituloAnimado(" BIENVENIDO A ESCALERA ", 50);
 
 
 		rlutil::setBackgroundColor(rlutil::BLACK);
@@ -116,11 +121,12 @@ void MenuPrincipal(){
             case 0:
                 system("cls");
 
-                TituloAnimado("MODO DE UN JUGADOR", 51);
-
-
+                MenuJugador();
 
                 rlutil::anykey();
+                rlutil::setBackgroundColor(rlutil::BLACK);
+
+                system("cls");
                 break;
 
             case 1:

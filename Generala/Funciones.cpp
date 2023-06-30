@@ -50,14 +50,17 @@ void ordenarVector(int v[], int tam ){
 
 
 int maximoVector(int v[], int tam){
-    int i, posMax=0;
-    for(i=1;i<tam;i++){
+    int i, posMax=1;
+    for(i=1;i<=tam;i++){
         if(v[i]>=v[posMax]) {
                 posMax=i;
         }
     }
     return posMax;
 }
+
+
+
 
 int MayorVector(int v[], int tam){
     int mayor;
@@ -76,7 +79,7 @@ int MayorVector(int v[], int tam){
 void cargarAleatorio(int v[], int tam, int limite){
   int i;
   srand(time(NULL));
-  for( i=0; i<tam; i++ ){
+  for( i=1; i<=tam; i++ ){
         v[i]=(rand()%limite)+1;
   }
 }
@@ -110,7 +113,7 @@ int contarNumerosRepetidos(int v[], int numero, int tam){
 
 void ponerCero(int v[], int tam){
     int i;
-    for(i=0;i<tam;i++){
+    for(i=1;i<=tam;i++){
         v[i]=0;
     }
 }

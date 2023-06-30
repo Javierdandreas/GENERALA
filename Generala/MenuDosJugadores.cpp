@@ -33,14 +33,13 @@ void MenuDosJugadores () {
 
     int vPuntos_J1[3];
     int vPuntos_J2[3];
-    ponerCero(vPuntos_J1, 4);
-    ponerCero(vPuntos_J2, 4);
+    ponerCero(vPuntos_J1, 3);
+    ponerCero(vPuntos_J2, 3);
 
     int vRepetidos_1[6];
-    ponerCero(vRepetidos_1, 7);
-
     int vRepetidos_2[6];
-    ponerCero(vRepetidos_2, 7);
+    ponerCero(vRepetidos_1, 6);
+    ponerCero(vRepetidos_2, 6);
 
     rlutil::showcursor();
 
@@ -162,11 +161,10 @@ void InterfazJ1(int& R, char *J1, int& total_1, int vD[], int vP[], int vR[], in
         rlutil::setColor(rlutil::WHITE);
 
 
-
         rlutil::locate(36, 14);
         cout << " TURNO DE: " << J1 << "   RONDA NUMERO: " << R << "   PUNTAJE TOTAL: "<< total_1 ;
 
-        cargarAleatorio(vD, 7, 6);
+        cargarAleatorio(vD, 6, 6);
 
         DibujarDados(vD[1], 37, 22);
         DibujarDados(vD[2], 47, 22);
@@ -182,10 +180,15 @@ void InterfazJ1(int& R, char *J1, int& total_1, int vD[], int vP[], int vR[], in
         vR[5] = contarNumerosRepetidos(vD, 5, 7);
         vR[6] = contarNumerosRepetidos(vD, 6, 7);
 
-        may = maximoVector(vR, 7);
+        may = maximoVector(vR, 6);
+
+
 
         numDadoMayor=may;
         RepesMayor=vR[may];
+
+
+        vP[x] = CalcularPuntos(numDadoMayor, RepesMayor, vD);
 
         if (RepesMayor==6 && numDadoMayor==6){
             rlutil::locate(36, 17);
@@ -216,11 +219,8 @@ void InterfazJ1(int& R, char *J1, int& total_1, int vD[], int vP[], int vR[], in
             rlutil::locate(37, 26);
             cout << " GANASTE LA PARTIDA!! " ;
             esca = true;
-            total_1 = 501;
             R = R +1;
         }
-
-        vP[x] = CalcularPuntos(numDadoMayor, RepesMayor, x, vD, vP, esca);
 
         mayorRonda = MayorVector(vP, 3);
 
@@ -242,6 +242,7 @@ void InterfazJ1(int& R, char *J1, int& total_1, int vD[], int vP[], int vR[], in
     }
 
     total_1 += mayorRonda;
+
     ponerCero(vP, 4);
     ponerCero(vD, 6);
     mayorRonda = 0;
@@ -338,12 +339,17 @@ void InterfazJ2(int& R, char *J2, int& total_2, int vD[], int vP[], int vR[], in
             rlutil::locate(36, 18);
             cout << " LANZAMIENTO NUMERO: " << lanza;
 
+            for (int x=1; x<=3; x++){
+                vP[x]=0;
+            }
+
             rlutil::locate(75, 17);
             cout << " PUNTOS LANZ. 1: " << vP[1];
             rlutil::locate(75, 18);
             cout << " PUNTOS LANZ. 2: " << vP[2];
             rlutil::locate(75, 19);
             cout << " PUNTOS LANZ. 3: " << vP[3];
+
             rlutil::anykey();
             system("cls");
             break;
@@ -357,7 +363,7 @@ void InterfazJ2(int& R, char *J2, int& total_2, int vD[], int vP[], int vR[], in
             R = R +1;
         }
 
-        vP[x] = CalcularPuntos(numDadoMayor, RepesMayor, x, vD, vP, esca);
+        vP[x] = CalcularPuntos(numDadoMayor, RepesMayor, vD);
 
         mayorRonda = MayorVector(vP, 3);
 
@@ -495,11 +501,11 @@ void EntreTurno2 (int R, char *turno, char *J1, char *J2, int& total_1, int& tot
         rlutil::anykey();
 }
 
-int CalcularPuntos(int numDado, int Repes, int var_control, int vDados[], int vPuntos[], bool escalera){
+int CalcularPuntos(int numDado, int Repes, int vDados[]){
 
 int resultado=0;
+
     if (Repes>1 && Repes<3){
-        rlutil::locate(40, 33);
         resultado = sumarVector(vDados, 7);
     }
     if (Repes>=3 && Repes<6){

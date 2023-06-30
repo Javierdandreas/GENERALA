@@ -11,7 +11,7 @@ void EntreTurno1(int, char *J1, char*J2, int&, int&);
 
 void EntreTurno2(int,  char *turno, char *J1, char*J2, int&, int&);
 
-int CalcularPuntos(int, int, int, int[], int [], bool);
+int CalcularPuntos(int, int, int[]);
 
 void ganador(char*, int, int);
 
