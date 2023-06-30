@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1686929525 source:c:\users\mi\onedrive\documentos\github\generala\generala\main.cpp
+1688099162 source:c:\users\mi\onedrive\documentos\github\generala\generala\main.cpp
 	<iostream>
 	"rlutil.h"
 	"Dados.h"
@@ -47,15 +47,15 @@
 	<sys/types.h>
 	<sys/time.h>
 
-1688095555 source:c:\users\mi\onedrive\documentos\github\generala\generala\dados.cpp
+1688099162 source:c:\users\mi\onedrive\documentos\github\generala\generala\dados.cpp
 	<iostream>
 	"rlutil.h"
 	<cstdlib>
 	"Dados.h"
 
-1686082367 c:\users\mi\onedrive\documentos\github\generala\generala\dados.h
+1688099162 c:\users\mi\onedrive\documentos\github\generala\generala\dados.h
 
-1688008429 c:\users\mi\onedrive\documentos\github\generala\generala\funciones.h
+1688099161 c:\users\mi\onedrive\documentos\github\generala\generala\funciones.h
 	"rlutil.h"
 	<iostream>
 	<cstdlib>
@@ -92,7 +92,7 @@
 
 1688091409 c:\users\mi\onedrive\documentos\github\generala\generala\menu.h
 
-1688094208 source:c:\users\mi\onedrive\documentos\github\generala\generala\menu.cpp
+1688099162 source:c:\users\mi\onedrive\documentos\github\generala\generala\menu.cpp
 	<iostream>
 	<cstdlib>
 	"rlutil.h"
@@ -103,7 +103,7 @@
 	"MenuDosJugador.h"
 	"MenuUnJugador.h"
 
-1688094336 source:c:\users\mi\onedrive\documentos\github\generala\generala\reglas.cpp
+1688099162 source:c:\users\mi\onedrive\documentos\github\generala\generala\reglas.cpp
 	<iostream>
 	<cstdlib>
 	"rlutil.h"
@@ -112,9 +112,9 @@
 	"Dados.h"
 	"Reglas.h"
 
-1687048592 c:\users\mi\onedrive\documentos\github\generala\generala\reglas.h
+1688099162 c:\users\mi\onedrive\documentos\github\generala\generala\reglas.h
 
-1688098084 source:c:\users\mi\onedrive\documentos\github\generala\generala\menudosjugadores.cpp
+1688099162 source:c:\users\mi\onedrive\documentos\github\generala\generala\menudosjugadores.cpp
 	<iostream>
 	<cstdlib>
 	"rlutil.h"
@@ -137,9 +137,9 @@
 
 1688092349 c:\users\mi\onedrive\documentos\github\generala\generala\menuunjugador.h
 
-1688097730 c:\users\mi\onedrive\documentos\github\generala\generala\menudosjugador.h
+1688099161 c:\users\mi\onedrive\documentos\github\generala\generala\menudosjugador.h
 
-1688095945 source:c:\users\mi\onedrive\documentos\github\generala\generala\funciones.cpp
+1688099162 source:c:\users\mi\onedrive\documentos\github\generala\generala\funciones.cpp
 	<iostream>
 	<cstdlib>
 	<cstdio>

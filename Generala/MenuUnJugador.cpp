@@ -178,7 +178,6 @@ void Interfaz(int& R, char *J, int& total, int vD[], int vP[], int vR[], int may
             rlutil::locate(37, 26);
             cout << " GANASTE LA PARTIDA!! " ;
             esca = true;
-            total = 501;
             R = R +1;
         }
 

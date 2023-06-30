@@ -1,3 +1,4 @@
+
 #include<iostream>
 #include<cstdlib>
 #include"rlutil.h"
@@ -359,7 +360,6 @@ void InterfazJ2(int& R, char *J2, int& total_2, int vD[], int vP[], int vR[], in
             rlutil::locate(37, 26);
             cout << " GANASTE LA PARTIDA!! " ;
             esca = true;
-            total_2 = 501;
             R = R +1;
         }
 

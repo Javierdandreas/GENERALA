@@ -42,6 +42,8 @@
 		<Unit filename="Menu.h" />
 		<Unit filename="MenuDosJugador.h" />
 		<Unit filename="MenuDosJugadores.cpp" />
+		<Unit filename="MenuUnJugador.cpp" />
+		<Unit filename="MenuUnJugador.h" />
 		<Unit filename="Reglas.cpp" />
 		<Unit filename="Reglas.h" />
 		<Unit filename="funciones.h" />
